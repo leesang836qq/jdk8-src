@@ -4,6 +4,10 @@
 
 `Object`类是所有类层级的根,包括数组.
 
+![Object_Structure.png](/notes/imgs/Object_Structure.png)
+
+方法`m`上有钉子样式的表示是[`final`](#final关键字)的。`final`表示不能重写的。
+
 主要定义的方法有`getClass`、`hashCode`、`equals`、`clone`,`toString`:
 
 ```java
@@ -20,7 +24,9 @@ public class Object{
 }
 ```
 
-其中`hashCode`、`equals`,`toString`都通过java代码提供实现.而`getClass`、`clone`是native,即由平台相关代码实现,其中`getClass`是`final`的.
+其中`equals`,`toString`都通过java代码提供实现.而`hashCode`、`getClass`、`clone`是[native](#native方法)（知识点啊）,即由平台相关代码实现,其中`getClass`是`final`的.
+
+
 
 下面依次讨论上面5个方法.
 
@@ -241,3 +247,24 @@ class ConcretePrototype implements Cloneable
 
 toString方法是我们经常使用的。Object类提供默认toString的实现为`getClass().getName() + "@" + Integer.toHexString(hashCode())`. 其中getClass().getName()请查看[Class](Class.md).
 如果类如果没有覆盖改方法，那个对象调用toString方法返回的是“类名字串@地址hash字串”。
+
+### native方法
+
+别人都解释“native”是“本地的”的意思，我查了字典，发现native还有个意思“与生俱来的/原生”在这更合适。
+Java中的“native方法”解释成java中“与生俱来(/原生)的方法”不是更好理解吗？Java语言是一种高级语言，也是由C开发而来的，所以“native”方法底层是就是使用C的，伴随Java语言一起产生的。native关键字来源与JNI。
+
+关于JNI的文档：
+
+http://docs.oracle.com/javase/8/docs/technotes/guides/jni/
+https://en.wikipedia.org/wiki/Java_Native_Interface
+https://dirtysalt.github.io/jni.html
+
+>> Java Native Interface (JNI) is a standard programming interface for writing Java native methods and embedding the Java virtual machine into native applications. The primary goal is binary compatibility of native method libraries across all Java virtual machine implementations on a given platform.
+
+### final关键字
+
+
+
+### 相关链接
+
+1. http://www.cnblogs.com/cq-home/p/6431426.html
