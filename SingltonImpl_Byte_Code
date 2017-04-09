@@ -1,0 +1,62 @@
+/opt/jdk1.8.0_77\bin\javap -verbose /home/two8g/Develop/IdeaProjects/jdk8-src/out/test/jdk8-src/SingletonImpl.class
+Classfile /home/two8g/Develop/IdeaProjects/jdk8-src/out/test/jdk8-src/SingletonImpl.class
+  Last modified 2017-3-30; size 574 bytes
+  MD5 checksum 767d8e0de41ae83a2e2b4ebc076c7daa
+  Compiled from "SingletonImpl.kt"
+public final class SingletonImpl
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               SingletonImpl
+   #2 = Class              #1             // SingletonImpl
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = NameAndType        #5:#6          // "<init>":()V
+   #8 = Methodref          #4.#7          // java/lang/Object."<init>":()V
+   #9 = Utf8               INSTANCE
+  #10 = Utf8               LSingletonImpl;
+  #11 = NameAndType        #9:#10         // INSTANCE:LSingletonImpl;
+  #12 = Fieldref           #2.#11         // SingletonImpl.INSTANCE:LSingletonImpl;
+  #13 = Utf8               this
+  #14 = Utf8               <clinit>
+  #15 = Utf8               Lkotlin/Metadata;
+  #16 = Utf8               mv
+  #17 = Integer            1
+  #18 = Integer            5
+  #19 = Utf8               bv
+  #20 = Integer            0
+  #21 = Utf8               k
+  #22 = Utf8               d1
+  #23 = Utf8                \n\n \nÆ 20B¢¨
+  #24 = Utf8               d2
+  #25 = Utf8
+  #26 = Utf8               jdk8-src
+  #27 = Methodref          #2.#7          // SingletonImpl."<init>":()V
+  #28 = Utf8               SingletonImpl.kt
+  #29 = Utf8               Code
+  #30 = Utf8               LocalVariableTable
+  #31 = Utf8               LineNumberTable
+  #32 = Utf8               SourceFile
+  #33 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final SingletonImpl INSTANCE;
+    descriptor: LSingletonImpl;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class SingletonImpl
+         3: invokespecial #27                 // Method "<init>":()V
+         6: return
+      LineNumberTable:
+        line 1: 0
+}
+SourceFile: "SingletonImpl.kt"
+RuntimeVisibleAnnotations:
+  0: #15(#16=[I#17,I#17,I#18],#19=[I#17,I#20,I#17],#21=I#17,#22=[s#23],#24=[s#10,s#25,s#6,s#26])

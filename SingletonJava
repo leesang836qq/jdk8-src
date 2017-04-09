@@ -1,0 +1,41 @@
+// class version 52.0 (52)
+// access flags 0x31
+public final class SingletonJava {
+
+  // compiled from: SingletonJava.java
+
+  // access flags 0x9
+  public static LSingletonJava; INSTANCE
+
+  // access flags 0x2
+  private <init>()V
+   L0
+    LINENUMBER 2 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L1
+    LINENUMBER 3 L1
+    ALOAD 0
+    PUTSTATIC SingletonJava.INSTANCE : LSingletonJava;
+   L2
+    LINENUMBER 4 L2
+    RETURN
+   L3
+    LOCALVARIABLE this LSingletonJava; L0 L3 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 7 L0
+    NEW SingletonJava
+    DUP
+    INVOKESPECIAL SingletonJava.<init> ()V
+    POP
+   L1
+    LINENUMBER 8 L1
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 0
+}

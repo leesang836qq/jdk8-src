@@ -1,0 +1,39 @@
+// ================SingletonImpl.class =================
+// class version 50.0 (50)
+// access flags 0x31
+public final class SingletonImpl {
+
+
+  // access flags 0x2
+  private <init>()V
+   L0
+    LINENUMBER 1 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    ALOAD 0
+    CHECKCAST SingletonImpl
+    PUTSTATIC SingletonImpl.INSTANCE : LSingletonImpl;
+    RETURN
+   L1
+    LOCALVARIABLE this LSingletonImpl; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x19
+  public final static LSingletonImpl; INSTANCE
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 1 L0
+    NEW SingletonImpl
+    INVOKESPECIAL SingletonImpl.<init> ()V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 0
+
+  @Lkotlin/Metadata;(mv={1, 1, 5}, bv={1, 0, 1}, k=1, d1={"\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2={"LSingletonImpl;", "", "()V", "test sources for module jdk8-src"})
+  // compiled from: SingletonImpl.kt
+}
+
+
