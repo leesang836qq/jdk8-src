@@ -161,7 +161,7 @@ Object类的hashCode返回的是对象的内部地址，由平台相关代码实
 
 已知Java中String类的hashCode算法为：
 
-![String.hashCode](../../imgs/1d8403a919eaa5b831ec64aecacd498f5f9be602.svg)
+![String.hashCode](/notes/imgs/String_hashCode.svg)
 
 ## 3.equals方法
 
