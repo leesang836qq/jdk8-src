@@ -18,8 +18,10 @@ public class ObjectTest {
         Class sClass = s.getClass();
         List<Integer> integerList = new ArrayList<>();
         Class<? extends List> integerListClass = integerList.getClass();
+        System.out.println(integerListClass.toString());
         ArrayList<Integer> integerList_1 = new ArrayList<>();
         Class<? extends ArrayList> integerListClass_1 = integerList_1.getClass();
+        System.out.println(integerListClass_1.toString());
     }
 
     @Test
@@ -34,8 +36,10 @@ public class ObjectTest {
         Class<? extends List> integerListClass = integerList.getClass();
         ArrayList<Integer> integerList_1 = new ArrayList<>();
         Class<? extends ArrayList> integerListClass_1 = integerList_1.getClass();
+
         List<Integer> integerList_2 = new LinkedList<>();
         Class<? extends List> integerListClass_2 = integerList_2.getClass();
+
         List<String> stringList_3 = new ArrayList<>();
         Class<? extends List> stringListClass_3 = stringList_3.getClass();
 

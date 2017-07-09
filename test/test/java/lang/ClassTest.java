@@ -1,7 +1,7 @@
-package test.java.lang;
+//package test.java.lang;
 
 import org.junit.Test;
-import org.zwobble.mammoth.DocumentConverter;
+//import org.zwobble.mammoth.DocumentConverter;
 
 import java.io.File;
 import java.io.IOException;
@@ -92,7 +92,7 @@ public class ClassTest {
 
     @Test
     public void convert() throws IOException {
-        DocumentConverter converter = new DocumentConverter();
-        System.out.println(converter.convertToHtml(new File("/home/two8g/Develop/IdeaProjects/dxhpaper/docxs/80600163.docx")).getValue());
+        //DocumentConverter converter = new DocumentConverter();
+        //System.out.println(converter.convertToHtml(new File("/home/two8g/Develop/IdeaProjects/dxhpaper/docxs/80600163.docx")).getValue());
     }
 }

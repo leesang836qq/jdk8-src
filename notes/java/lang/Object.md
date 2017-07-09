@@ -38,7 +38,7 @@ public class Object{
 public final native Class<?> getClass();
 ```
 
-该方法获取的是Obejct的运行时的class,返回的一个Class对象,如何一个Obejct都关联一个`java.lang.Class`的实例的引用.
+该方法获取的是Obejct的运行时的class,返回一个Class对象,任何一个Obejct都关联一个`java.lang.Class`的实例的引用.
 另外注意`Class<?>`的形式.实际表示是`Class<? extends |X|>`,其实.
 其中`|X|`是对象的static type()的类型擦除结果.
 
@@ -69,7 +69,7 @@ type*与*静态类型语言*也有点关系. (我对这理解还不够深入,大
 >> compiler, so you can suppress warnings when you know that it is safe
 >> to do so.
 
-运行时类型是指,代码时间运行时的类型.
+运行时类型是指,代码实际运行时的类型.
 作为程序员,你希望比编译器更好的清除代码,所以,当你知道代码是类型安全的时候你可以屏蔽警告.
 
 我的理解是. *compile-time type*就是我们声明参数或变量时的类型.而*runtime
@@ -100,7 +100,7 @@ Class<? extends ArrayList> integerListClass = integerList.getClass();
 >> parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK
 >> 5中的新集合类框架中.
 
-而对于类型擦除,例如: List<String> 的类型擦除类型为 List.
+而对于类型擦除,例如: `List<String>` 的类型擦除类型为 List.
 
 以下代码是正确的:
 
